@@ -3,20 +3,19 @@ let prompt = promptSync();
 
 // const promise = new Promise((resolve, reject) => {
 //   let computer = Math.floor(Math.random() * 1);
-//   console.log(computer);
-
 //   let mine = parseInt(prompt("Choose a number: "));
-//   let trial = 4;
+//   let trial = 5;
 
 //   while (computer !== mine && trial !== 0) {
-//     const trials = parseInt(prompt(`You have ${(trial -= 1)} trials left: `));
-//     if (trials === computer) {
+//     let tries = parseInt(prompt(`You have ${(trial -= 1)} trials left: `));
+//     if (tries === computer) {
 //       resolve("You win");
 //       break;
-//     } else {
+//     } else if (trial === 0) {
 //       reject("You lose");
 //     }
 //   }
+
 //   if (mine === computer) {
 //     resolve("You win");
 //   }
